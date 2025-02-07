@@ -21,6 +21,7 @@ sudo systemctl enable jenkins
 Step 4: we need to set java path because binary not stored in the path where so we manually set to path
  Cd  /usr/lib/jvm
 echo  $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 export JAVA_HOME=usr/lib/jvm/java-17-openjdk-amd64
 export PATH=$PATH:$JAVA_HOME/bin
 echo  $PATH
