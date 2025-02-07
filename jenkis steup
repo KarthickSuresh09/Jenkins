@@ -33,8 +33,9 @@ Get password  cat /var/lib/jenkins/secrets/initialAdminPassword
 Setup username & password in jenkins dashboard
  
 
-
-
- 
+Addintional step
+     * if you want to change jenkins default port 8080 (cd /etc/default) inside this path file name is jenkins 
+     * vi jenkins 
+     * In http section it is available # --httpPort=$HTTP_PORT (default 8080; disable with -1)
 
 
