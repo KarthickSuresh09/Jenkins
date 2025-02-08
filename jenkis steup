@@ -38,4 +38,5 @@ Addintional step
      * vi jenkins 
      * In http section it is available # --httpPort=$HTTP_PORT (default 8080; disable with -1)
 
-
+ > inside this path /var/lib/jenkins/workspace
+ > your jenkins jobs are available
