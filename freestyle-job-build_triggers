@@ -1,0 +1,6 @@
+Build Trigger
+
+       1) Build periodically :
+                                * * * * * /path/to/script.sh
+
+
