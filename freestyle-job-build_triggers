@@ -11,3 +11,14 @@ Check "Build periodically".
 Enter a cron schedule (e.g., H 12 * * 1-5 to run at noon on weekdays).
 Save the configuration.
 
+
+
+       2) Poll SCM:
+                   POLL SCM also follow the same step of crontab and POLL SCM only run when your code is updated
+                    * * * * * /path/to/script.sh
+
+How Poll SCM Works:
+Jenkins checks the repository at the scheduled time.
+If changes are detected, it triggers a build.
+If no changes, Jenkins does nothing.
+
