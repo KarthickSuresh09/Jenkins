@@ -2,5 +2,12 @@ Build Trigger
 
        1) Build periodically :
                                 * * * * * /path/to/script.sh
+ In Jenkins, the "Build Periodically" option is used to trigger a job at scheduled intervals automatically. It is based on a cron expression, which defines when the job should run.
 
+How It Works:
+Go to Jenkins Dashboard → Select your job.
+Click Configure → Scroll to "Build Triggers".
+Check "Build periodically".
+Enter a cron schedule (e.g., H 12 * * 1-5 to run at noon on weekdays).
+Save the configuration.
 
