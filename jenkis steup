@@ -29,7 +29,7 @@ echo  $PATH
 
 Step 5:
 Setup jenkins dashboard and add port number 8080
-Get password  cat /var/lib/jenkins/secrets/initialAdminPassword
+Get default password  cat /var/lib/jenkins/secrets/initialAdminPassword
 Setup username & password in jenkins dashboard
  
 
