@@ -1,8 +1,8 @@
 Build Trigger
 
-       1) Build periodically :
-                                * * * * * /path/to/script.sh
- In Jenkins, the "Build Periodically" option is used to trigger a job at scheduled intervals automatically. It is based on a cron expression, which defines when the job should run.
+1) Build periodically :
+* * * * * /path/to/script.sh
+In Jenkins, the "Build Periodically" option is used to trigger a job at scheduled intervals automatically. It is based on a cron expression, which defines when the job should run.
 
 How It Works:
 Go to Jenkins Dashboard → Select your job.
@@ -13,12 +13,23 @@ Save the configuration.
 
 
 
-       2) Poll SCM:
-                   POLL SCM also follow the same step of crontab and POLL SCM only run when your code is updated
-                    * * * * * /path/to/script.sh
+2) Poll SCM:
+POLL SCM also follow the same step of crontab and POLL SCM only run when your code is updated
+* * * * * /path/to/script.sh
 
 How Poll SCM Works:
 Jenkins checks the repository at the scheduled time.
 If changes are detected, it triggers a build.
 If no changes, Jenkins does nothing.
+
+
+3) GitHub hook trigger for GITScm polling: 
+ Step1 : Enable github-webhook @jenkins build trigger
+
+ Step2 : Go to your github Repo ===> SETTINGS =====> webhook
+
+ payload URL:
+            http://3.110.48.174:8080/github-webhook/
+   http;//<JENKINS_SERVER_IP>:8080/github-webhook/
+                                                 
 
