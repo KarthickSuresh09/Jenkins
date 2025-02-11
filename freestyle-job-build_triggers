@@ -31,5 +31,16 @@ If no changes, Jenkins does nothing.
  payload URL:
             http://3.110.48.174:8080/github-webhook/
    http;//<JENKINS_SERVER_IP>:8080/github-webhook/
-                                                 
+
+
+4) Build after other projects are built: 
+
+=> Go to Jenkins Dashboard → Select your job.
+=> Click Configure → Scroll to "Build Triggers".
+=> Check "Build after other projects are built".
+=> Enter the name of the upstream job(s) (the job that should finish before this job starts).
+=> Choose when to trigger:
+ *) Trigger only if the upstream job is stable (successful).
+ *) Trigger even if the upstream job is unstable or failed.
+=> Save the configuration.
 
