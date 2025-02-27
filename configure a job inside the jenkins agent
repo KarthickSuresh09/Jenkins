@@ -1,0 +1,12 @@
+Step 1 : create a job and node parallelly in jenkins
+
+Step 2 : if your job name is compile job means 
+
+Step 3 : click the compile job and go job configuration section
+
+Step 4:  there is one option called "Restrict where this project can be run"
+
+Step 5: In that section you have a option "Label Expression"
+
+Step 6: In the Label Expression opetion you drop down in the dropdown you can select the node name
+  
