@@ -10,3 +10,8 @@
 *  Usage : Use this node as much as a possible
 *  Launch method : launch agents via ssh
     ==>  host : we need to provide a domain name or ip address 
+    ==>  Credentials : click on add button jenkins
+         ---> Kind : ssh username with privatekey
+         ---> Scope : Global
+         ---> username : enter username
+         ---> privatekey : enter directly ==> key ==> click on "add" button and enter private key of the ssh
