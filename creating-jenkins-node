@@ -1,0 +1,8 @@
+*  First we need to setup a ssh-keygen communication with master and slave
+*  We need to install java on slave machine same version of the master
+*  Manage jenkins ==> Nodes ==> create a Newnode
+*  We need to provide a node name and permanent agent or Copy Existing Node
+*  We need to name a agent "slave" 
+*  write a purpose of a agent an in descripation
+*  Number of executors means how many times job need to run like a "1"
+*  
