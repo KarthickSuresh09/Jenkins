@@ -6,7 +6,7 @@
 *  write a purpose of a agent an in descripation
 *  Number of executors means how many times job need to run like a "1"
 *  remote root directory means we need to provide one folder like a "/tmp"
-*  labels
+*  labels agent { node { label 'labelName' } } behaves the same as agent { label 'labelName' } , but node allows for additional options (such as customWorkspace )
 *  Usage : Use this node as much as a possible
 *  Launch method : launch agents via ssh
     ==>  host : we need to provide a domain name or ip address 
