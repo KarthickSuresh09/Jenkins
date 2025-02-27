@@ -15,3 +15,6 @@
          ---> Scope : Global
          ---> username : enter username
          ---> privatekey : enter directly ==> key ==> click on "add" button and enter private key of the ssh
+
+*  Host Key Verification Strategy : Manually trusted key verfication startegy
+*  Availability : Keep this agent online as much as possible
