@@ -18,6 +18,11 @@ check the browser with the IP address:8080
 
 =====> configuration of tomcat 
 edit context.xml
+/opt/apache-tomcat-9.0.100/webapps/manager/META-INF/context.xml
+/opt/apache-tomcat-9.0.100/webapps/examples/META-INF/context.xml
+/opt/apache-tomcat-9.0.100/webapps/docs/META-INF/context.xml
+/opt/apache-tomcat-9.0.100/webapps/host-manager/META-INF/context.xml
+
 webapps/manager/META-INF/context.xml 
 solution:  https://stackoverflow.com/questions/36703856/access-tomcat-manager-app-from-different-host
 <!--
@@ -37,5 +42,14 @@ just remove it : <!-- and -->
   <user username="both" password="<must-be-changed>" roles="tomcat,role1"/>
   <user username="role1" password="<must-be-changed>" roles="role1"/>
 -->
+
+OR you can replace this content
+<role rolename="manager-gui"/>
+<role rolename="manager-script"/>
+<role rolename="manager-jmx"/>
+<role rolename="manager-status"/>
+<user username="admin" password="admin" roles="manager-gui, manager-script, manager-jmx, manager-status"/>
+<user username="deployer" password="deployer" roles="manager-script"/>
+<user username="tomcat" password="s3cret" roles="manager-gui"/>
 
 
