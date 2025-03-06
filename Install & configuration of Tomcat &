@@ -1,0 +1,41 @@
+==> tomcat installation
+cd /opt
+sudo wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.100/bin/apache-tomcat-9.0.100.tar.gz
+sudo tar -xvzf apache-tomcat-9.0.100.tar.gz
+
+===> configuration of tomcat
+cd apache-tomcat-9.0.100.tar.gz
+sudo su
+cd bin
+startup.sh*
+shutdown.sh*
+change the file permission "chmod 755 startup.sh* shutdown.sh*"
+
+====> Start the tomcat server
+./startup.sh*
+check the browser with the IP address:8080
+
+
+=====> configuration of tomcat 
+edit context.xml
+webapps/manager/META-INF/context.xml 
+solution:  https://stackoverflow.com/questions/36703856/access-tomcat-manager-app-from-different-host
+<!--
+  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+        allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />
+-->
+
+
+========> finding tomcat server username & password
+cd /opt/apache-tomcat-9.0.100/conf
+vi tomcat-users.xml
+just remove it : <!-- and -->
+<!--
+  <role rolename="tomcat"/>
+  <role rolename="role1"/>
+  <user username="tomcat" password="<must-be-changed>" roles="tomcat"/>
+  <user username="both" password="<must-be-changed>" roles="tomcat,role1"/>
+  <user username="role1" password="<must-be-changed>" roles="role1"/>
+-->
+
+
