@@ -57,3 +57,4 @@ manager-gui — Access to the HTML interface.
 manager-status — Access to the "Server Status" page only.
 manager-script — Access to the tools-friendly plain text interface that is described in this document, and to the "Server Status" page.
 manager-jmx — Access to JMX proxy interface and to the "Server Status" page.
+https://tomcat.apache.org/tomcat-8.0-doc/manager-howto.html
