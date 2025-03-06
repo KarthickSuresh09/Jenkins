@@ -22,7 +22,7 @@ edit context.xml
 /opt/apache-tomcat-9.0.100/webapps/examples/META-INF/context.xml
 /opt/apache-tomcat-9.0.100/webapps/docs/META-INF/context.xml
 /opt/apache-tomcat-9.0.100/webapps/host-manager/META-INF/context.xml
-
+(========> main configuration <===========)
 webapps/manager/META-INF/context.xml 
 solution:  https://stackoverflow.com/questions/36703856/access-tomcat-manager-app-from-different-host
 <!--
