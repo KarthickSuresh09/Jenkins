@@ -1,7 +1,10 @@
-Step 1 : Download the plugins copy artifacts
+Step 1 : Download the plugins copy artifacts & Deploy to container
 
 step 2 : create a first CI job and job name is project_package getting a source code from git and 
 BUILD STEPS in Invoke top-level Maven targets maven version you need to choose and goals is "clean package" 
 means package is command to build file clean means to create new one and delete the old files
 in pom section enter the pom.xml file path and nxt thing in Post-build Actions section you need to choose 
 "Archive the artifacts" enter the value like a '**/*.war' ** means any parent directory
+
+
+Step 2 :  create a second CD job and job name is project_deployment
