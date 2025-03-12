@@ -7,4 +7,15 @@ in pom section enter the pom.xml file path and nxt thing in Post-build Actions s
 "Archive the artifacts" enter the value like a '**/*.war' ** means any parent directory
 
 
-Step 2 :  create a second CD job and job name is project_deployment
+Step 2 :  create a second CD job and job name is project_deployment this time source code getting from
+previous job "project_package" in Build Steps options you can choose Project name section you need to chose 
+which job to get source code "project_package" click check box "Stable build only" Artifacts to copy is "**/*.war"
+Next option is Post-build Actions in WAR/EAR files need to enter "**/*.war" , Context path "/" go to Containers
+options in Credentials enter tomcat username password and enter the Tomcat URL "http://43.204.216.203:8080/"
+   
+
+ 
+
+
+
+
