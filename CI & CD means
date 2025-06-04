@@ -1,14 +1,30 @@
-          -----------------------------------CD--------------------------------------------
+
+
+CD Means ====> Contionus Delivery & Contionus Deployment
+
+
+
+         -----------------------------------CD--------------------------------------------
          |                                                                                |
          |                                                                                |
-         |
-         |
-Contionous Delivery
-         |
-         |
-Manual approve needs in
-stage and dev enviroments to 
-         |
-         |
-         |
-Prod enviroments
+         |                                                                                |
+         |                                                                                |
+Contionous Delivery                                                              Contonus Deployment
+         |                                                                                |
+         |                                                                                |
+Manual approve needs in                                                           No need manual approval
+stage and dev enviroments to                                                              |
+         |                                                                                |
+         |                                                                                |
+         |                                                                                |
+Prod enviroments                                                                   prod enviroments
+
+
+
+
+
+CI Means ============> Contionus Integeration
+
+
+
+
