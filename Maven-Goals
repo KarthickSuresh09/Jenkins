@@ -1,0 +1,11 @@
+validate, compile, test, package, install, and deploy
+
+
+validate: Checks if the project is valid and has all the necessary information.
+compile: Compiles the source code.
+test: Runs unit tests.
+package: Creates a distributable package (JAR, WAR, etc.).
+install: Installs the package into the local Maven repository.
+deploy: Deploys the packaged artifact to a remote repository.
+clean: Removes the target directory and any previously generated files.
+site: Generates project documentation. 
