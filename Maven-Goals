@@ -9,3 +9,8 @@ install: Installs the package into the local Maven repository.
 deploy: Deploys the packaged artifact to a remote repository.
 clean: Removes the target directory and any previously generated files.
 site: Generates project documentation. 
+
+
+
+
+clean package -DskipTests
