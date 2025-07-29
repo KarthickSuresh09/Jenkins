@@ -17,6 +17,9 @@ sudo systemctl start jenkins
 sudo systemctl status jenkins
 sudo systemctl enable jenkins
 
+trouble shoot command
+sudo journalctl -xeu jenkins.service
+
 
 Step 4: we need to set java path because binary not stored in the path where so we manually set to path
  Cd  /usr/lib/jvm
