@@ -1,0 +1,41 @@
+Creating pipeline step jobs
+
+Step 1:
+  Enter the job name and chose the pipeline option
+
+Step 2:
+  Enter the Description of your job and for what purpose its running
+
+Step 3:
+  Chose the Github project and enter the project URL of the github repo url
+
+Step 4:
+  In Triggers you chose the optoin for what recqirments your orginaction have you can chose
+    * for first job i go with webhook 
+    > after first jobs Build after other projects are built  
+        >> i chosed option Trigger only if build is stable
+            >>> Now i am chosing my upstream job
+
+
+Step 5:
+  in pipeline option for first job i enter this script git repositery URL    
+
+  pipeline {
+    agent any
+    
+    stages {
+        stage('Clone Repo') {
+            steps {
+                // Jenkins Git step
+                git branch: 'main',
+                    url: 'https://github.com/username/repository.git'
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                echo "Code fetched successfully!"
+            }
+        }
+    }
+}
